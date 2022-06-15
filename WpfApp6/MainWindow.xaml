@@ -1,0 +1,49 @@
+﻿<Window x:Class="WpfApp6.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp6"
+        mc:Ignorable="d"
+      Title="ГАИ" Height="450" Width="800">
+    <Grid Margin="0,0,2,0" Background="#FF302092">
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Label Content="Государственная автомобильная инспекция" HorizontalAlignment="Center" FontSize="20" Height="30" FontFamily="Bookman Old Style" Background="{x:Null}" Foreground="White" Grid.ColumnSpan="3" Margin="165,56,145,55" Width="480"/>
+        <Image Source="C:\Users\Алдар\Downloads\Практика123.png" Margin="-55,0,55,0"/>
+        <Grid Grid.Row="1" Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Label Content="Авторизация" HorizontalAlignment="Center" FontSize="21" Margin="66,0,49,10" Grid.RowSpan="2" Foreground="#FFFFFBFB" FontFamily="Bookman Old Style" Width="149" />
+            <Label Content="Введите логин" Grid.Row="1" Foreground="White" FontFamily="Bookman Old Style"/>
+            <TextBox Name="Login" Grid.Row="2" Background="#FFB4C7E7" UndoLimit="50"  />
+            <Label Content="Введите пароль" Grid.Row="3" Foreground="#FFFFFEFE" FontFamily="Bookman Old Style"/>
+            <TextBox Name="Password" Grid.Row="4" Background="#FFB4C7E7"/>
+            <Button Content="Вход" HorizontalAlignment="Center" Name="Enter" Grid.Row="6" Click="Click" FontFamily="Bookman Old Style">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                        <GradientStop Color="#FFF3F3F3" Offset="0"/>
+                        <GradientStop Color="#FFEBEBEB" Offset="0.5"/>
+                        <GradientStop Color="#FFDDDDDD" Offset="0.5"/>
+                        <GradientStop Color="#FFB4C7E7" Offset="1"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+        </Grid>
+    </Grid>
+</Window>

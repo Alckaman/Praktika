@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="10f1455cd120466fb68d1ccd5f6d0785" Name="Diagram1">
+        <EntityTypeShape EntityType="GAIModel.Car" Width="1.5" PointX="0.75" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="GAIModel.Driver" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GAIModel.DriversCars" Width="1.5" PointX="3" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="GAIModel.Incident" Width="1.5" PointX="6" PointY="3.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="GAIModel.IncidentsVolations" Width="1.5" PointX="8.25" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GAIModel.Inspector" Width="1.5" PointX="3.75" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="GAIModel.State" Width="1.5" PointX="6" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="GAIModel.Violation" Width="1.5" PointX="6" PointY="7" IsExpanded="true" />
+        <AssociationConnector Association="GAIModel.FK_DriversCars_Car" ManuallyRouted="false" />
+        <AssociationConnector Association="GAIModel.FK_Incident_Car" ManuallyRouted="false" />
+        <AssociationConnector Association="GAIModel.FK_DriversCars_Driver" ManuallyRouted="false" />
+        <AssociationConnector Association="GAIModel.FK_Incident_Driver" ManuallyRouted="false" />
+        <AssociationConnector Association="GAIModel.FK_Incident_Inspector" ManuallyRouted="false" />
+        <AssociationConnector Association="GAIModel.FK_IncidentsVolations_Incident" ManuallyRouted="false" />
+        <AssociationConnector Association="GAIModel.FK_IncidentsVolations_State" ManuallyRouted="false" />
+        <AssociationConnector Association="GAIModel.FK_IncidentsVolations_Violation" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
